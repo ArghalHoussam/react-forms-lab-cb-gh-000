@@ -16,6 +16,9 @@ class LoginForm extends React.Component {
     }, () => console.log(this.state))
   }
 
+  handleFormSubmition = (event) => {
+    event.preventDefault();
+  }
   render() {
     return (
       <form onSubmit={ event => this.handleFormSubmition(event) }>
